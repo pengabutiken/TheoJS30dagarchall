@@ -55,7 +55,19 @@ html {
       
      
     }
-    ::root
+    :root{
+        --base:#c59d0c;
+        --spacing:10px;
+        --blur:10px;
+    }
+    img{
+        padding:var(--spacing);
+        background-color: var(--base);
+        filter: blur(var(--blur));
+    }
+    .hl{
+        color:var(--base);
+    }
 
     .controls {
       margin-bottom: 50px;
